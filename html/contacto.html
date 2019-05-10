@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/hoja_de_estilo_principal.css" type="text/css">
+    <link rel="icon" href="../imagenes/fav-ico.ico" type="image/png">
+    <script src="../js/index.js" type="text/javascript"></script>
+    <title>Tandilvial</title>
+  </head>
+  <body class="contenedor-general">
+      <div class="arrow">
+          <img src="../imagenes/arrow-up.png">
+      </div>
+      <div class="contenedor">
+        <div class="overlay">
+          <header class="logo">
+            <img src="../imagenes/tandil-vial2.png">
+          </header>
+          <div class="mas-de-30-años">
+            <img src="../imagenes/30-años3.png">
+          </div>
+        </div>
+      <nav class="navegacion">
+        <ul class="menu">
+          <li class="first-item">
+            <a href="../index.html">
+              <img src="../imagenes/logo-inicio.png">
+              <span class="text-item"><h1>Inicio</h1></span>
+              <span class="down-item"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./portfolio.html">
+              <img src="../imagenes/logo-proyectos.png">
+              <span class="text-item"><h1>Portfolio</h1></span>
+              <span class="down-item"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./servicios.html">
+              <img src="../imagenes/logo-servicios.png">
+              <span class="text-item"><h1>Servicios</h1></span>
+              <span class="down-item"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./contacto.html">
+              <img src="../imagenes/logo-contacto.png">
+              <span class="text-item"><h1>Contacto</h1></span>
+              <span class="down-item"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="caja">
+      <form class="formulario" action="../contacts.php" method="post">
+        <div class="nombre">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre">
+        </div>
+        <div class="email">
+          <label for="mail">Correo Electrónico</label>
+          <input type="email" name="mail">
+        </div>
+        <div class="mensaje">
+          <label for="msg">Mensaje</label>
+          <textarea name="msg"></textarea>
+        </div>
+        <div class="boton">
+          <button type="submit" ><b>Enviar</b></button>
+        </div>
+      </form>
+    </div>
+    <script>
+    url = new URL(location.href)
+    url = new URL(location.href)
+    if(url.searchParams.get("send")){
+      history.replaceState({},"","?");
+      alert("mensaje enviado")
+    }
+    </script>
+    <footer>
+      <div class="footer">
+        <div class="tandil">
+          <h4>Tandil</h4>
+          <h6>(casa central)</h6>
+          <h4>Las Heras 377</h4>
+          <h5>CP 7000</h5>
+          <h5>(0249) 465 3838</h5>
+          <h5 class="nro">456 4058</h5>
+          <p>..................</p>
+        </div>
+        <div class="mar-del-plata">
+          <h4>Mar del Plata</h4>
+          <h5>CP 7600</h5>
+          <h5>(0223) 503 7098</h5>
+          <p>..................</p>
+        </div>
+        <div class="la-plata">
+          <h4>La Plata</h4>
+          <h5>CP 1900</h5>
+          <h5>(0221) 503 3899</h5>
+          <p>..................</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
