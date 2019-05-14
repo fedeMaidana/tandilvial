@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/hoja_de_estilo_principal.css" type="text/css">
     <link rel="icon" href="imagenes/fav-ico.ico" type="image/png">
     <title>Tandilvial</title>
+    <meta name="robots" content="index, follow"/>
     <script src="js/jquery.js"></script>
     <script src="js/index.js" type="text/javascript"></script>
   </head>
@@ -14,8 +16,17 @@
     </div>
     <div class="contenedor">
       <div class="overlay">
+        <nav id="nav-mobile">
+          <img src="imagenes/menu.png">
+          <ul class="nav-items-mobile">
+            <li><a href="index.html"><span>Inicio</span></a></li>
+            <li><a href="html/portfolio.html"><span>Portfolio</span></a></li>
+            <li><a href="html/servicios.html"><span>Servicios</span></a></li>
+            <li><a href="html/contacto.html"><span>Contacto</span></a></li>
+          </ul>
+        </nav>
         <header class="logo">
-          <img src="imagenes/tandil-vial2.png">
+          <a href="index.html"><img src="imagenes/tandil-vial2.png"/></a>
         </header>
         <div class="mas-de-30-años">
           <img src="imagenes/30-años3.png">
@@ -81,7 +92,7 @@
         </div>
       </div>
       <div class="text-descr">
-        <h2>¿ Quienes Somos ?</h2>
+        <h2 class="h2-mobile">¿ Quienes Somos ?</h2>
         <p>Tandilvial es una empresa familiar en la 2° generación con amplia experiencia en los servicios
            que ofrece.<br><br>
            Nuestra actividad se remonta a más de 30 años de historia vinculada a obras de infraestructura,
@@ -95,7 +106,7 @@
            construcción, realizan un trabajo profesional interdisciplinario que incluye consultoría y
            asistencia para nuestras obras así como servicios a terceros; esto garantiza prestaciones de
            excelencia que aportan las mejores soluciones técnicas y económicas.</p>
-        <h2>Nuestros Servicios</h2>
+        <h2 class="h2-mobile2">Nuestros Servicios</h2>
       </div>
       <div class="ese">
       <a href="html/servicios.html#urbanizacion">

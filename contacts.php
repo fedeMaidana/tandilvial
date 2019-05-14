@@ -11,21 +11,21 @@ if(isset($_POST['mail'])){
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        $mail->SMTPDebug = 0;                                       // Enable verbose debug output
+        $mail->SMTPDebug = 3;                                       // Enable verbose debug output
         //$mail->IsMail();                                            // Set mailer to use SMTP
         $mail->IsSMTP();
         $mail->Host       = 'mail.intrabytes.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         //$mail->SMTPSecure = true;
-        $mail->Username   = 'server@tandilvial.com.ar';                     // SMTP username
-        $mail->Password   = 'Aa1234qwertyuiop.';                               // SMTP password
+        $mail->Username   = 'info@tandilvial.com.ar';                     // SMTP username
+        $mail->Password   = 'rg%bH1)=V;,X';                               // SMTP password
         $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
         $mail->Port       = 465;                                    // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('mdmartino@tandilvial.com.ar', 'martino');
-        $mail->addBCC('info@tandilvial', 'Joe User');
-        $mail->addAddress($_POST['mail'], $_POST['nombre']);
+        $mail->setFrom('info@tandilvial.com.ar', $_POST['nombre']);
+        $mail->addAddress('info@tandilvial.com.ar');
+        //$mail->addAddress($_POST['mail'], $_POST['nombre']);
         //$mail->addReplyTo('info@example.com', 'Information');
 
 

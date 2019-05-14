@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/hoja_de_estilo_principal.css" type="text/css">
     <link rel="icon" href="../imagenes/fav-ico.ico" type="image/png">
-    <script src="../js/index.js" type="text/javascript"></script>
     <title>Tandilvial</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/index.js" type="text/javascript"></script>
   </head>
   <body class="contenedor-general">
       <div class="arrow">
@@ -14,7 +16,7 @@
       <div class="contenedor">
         <div class="overlay">
           <header class="logo">
-            <img src="../imagenes/tandil-vial2.png">
+              <a href="../index.html"><img src="../imagenes/tandil-vial2.png"></a>
           </header>
           <div class="mas-de-30-años">
             <img src="../imagenes/30-años3.png">
@@ -67,8 +69,8 @@
           <label for="msg">Mensaje</label>
           <textarea name="msg"></textarea>
         </div>
-        <div class="boton">
-          <button type="submit" ><b>Enviar</b></button>
+        <div>
+          <button type="submit" class="boton"><b>Enviar</b></button>
         </div>
       </form>
     </div>
