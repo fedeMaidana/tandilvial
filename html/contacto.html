@@ -15,6 +15,15 @@
       </div>
       <div class="contenedor">
         <div class="overlay">
+          <nav id="nav-mobile">
+            <img src="../imagenes/menu.png">
+            <ul class="nav-items-mobile">
+              <li><a href="../index.html"><span>Inicio</span></a></li>
+              <li><a href="./portfolio.html"><span>Portfolio</span></a></li>
+              <li><a href="./servicios.html"><span>Servicios</span></a></li>
+              <li><a href="./contacto.html"><span>Contacto</span></a></li>
+            </ul>
+          </nav>
           <header class="logo">
               <a href="../index.html"><img src="../imagenes/tandil-vial2.png"></a>
           </header>
@@ -74,14 +83,23 @@
         </div>
       </form>
     </div>
+
     <script>
+
     url = new URL(location.href)
+
     url = new URL(location.href)
+
     if(url.searchParams.get("send")){
+
       history.replaceState({},"","?");
+
       alert("mensaje enviado")
+
     }
+    
     </script>
+
     <footer>
       <div class="footer">
         <div class="tandil">

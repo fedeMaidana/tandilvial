@@ -11,7 +11,7 @@ if(isset($_POST['mail'])){
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        $mail->SMTPDebug = 3;                                       // Enable verbose debug output
+        $mail->SMTPDebug = 0;                                       // Enable verbose debug output
         //$mail->IsMail();                                            // Set mailer to use SMTP
         $mail->IsSMTP();
         $mail->Host       = 'mail.intrabytes.com';  // Specify main and backup SMTP servers
@@ -39,11 +39,11 @@ if(isset($_POST['mail'])){
         ";
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-        var_dump($mail->send());
-        var_dump($mail->ErrorInfo);
-        echo 'Message has been sent';
+       // var_dump($mail->send());
+       // var_dump($mail->ErrorInfo);
+        //echo 'Message has been sent';
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+      //  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 
